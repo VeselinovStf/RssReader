@@ -13,10 +13,10 @@ namespace RssReader.Web
     {
         public Startup(IConfiguration configuration)
         {
-            Configuratio323n = configuration;
+            Configuration = configuration;
         }
 
-        public IConfiguration Configuratio323n { get; }
+        public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -30,7 +30,7 @@ namespace RssReader.Web
 
             //RSS READER CONFIG
             RssReaderNetCore2_2_Services.RegisterRssReaderServices(
-                services, Configuratio323n
+                services, Configuration
                     .GetSection("RSS")
                     .Get<IList<string>>());
 
