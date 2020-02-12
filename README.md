@@ -24,7 +24,7 @@ Used technologies
 
 ### Installation
 
-APIHC requires [.NET CORE 2.2] to run.
+RssReader requires [.NET CORE 2.2] to run.
 
 Clone or Download project.
 
